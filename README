@@ -1,0 +1,7 @@
+Terraform version ==> 0.11.3
+AWS cli has been installed and terraform takes keys form default aws cli profile. 
+
+init ==> terraform init
+plan ==> terraform plan
+apply ==> terraform apply
+destro ==> terraform destroy
