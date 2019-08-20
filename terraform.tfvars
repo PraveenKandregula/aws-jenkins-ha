@@ -1,3 +1,7 @@
 az = "us-east-1a"
 aws_region = "us-east-1"
 ebs_size = "20"
+ami_id = "ami-0b898040803850657"
+instance_type = "t2.micro"
+subnet_id = "subnet-086f8f54"
+key_name = "praveen-new-key"
