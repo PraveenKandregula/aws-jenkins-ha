@@ -2,9 +2,20 @@ provider "aws" {
   region = "${var.aws_region}"
 }
 
+terraform {
+  backend "s3" {
+    bucket = "bucket-tfstate"
+    key = "aws/terraform/jenkins"
+  }
+}
+
 module "get_vpc" {
   source = "./modules/get_vpc"
 }
+
+#module "create_s3_bucket" {
+  #source = "./modules/create_s3_bucket"
+#}
 
 module "create_security_group" {
   source = "./modules/create_security_group"

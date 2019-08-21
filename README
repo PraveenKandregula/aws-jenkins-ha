@@ -1,7 +1,7 @@
 Terraform version ==> 0.11.3
 AWS cli has been installed and terraform takes keys form default aws cli profile. 
 
-init ==> terraform init
+init ==> terraform init -backend-config="backend/us-east-1-jenkins"
 plan ==> terraform plan
 apply ==> terraform apply -auto-approve
-destroy ==> terraform destroy
+destroy ==> terraform destroy  #This will destroy all resources that have been created from this code. This terminated ebs volume as well mening no data persistence.

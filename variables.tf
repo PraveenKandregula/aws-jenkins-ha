@@ -5,3 +5,5 @@ variable "ami_id" {}
 variable "instance_type" {}
 variable "subnet_id" {}
 variable "key_name" {}
+variable "bucket_name" {}
+variable "bucket_path" {}
